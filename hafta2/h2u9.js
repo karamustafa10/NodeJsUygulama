@@ -4,6 +4,10 @@ const book = {
   pageCount: 326,
 };
 
+const bookJSON = JSON.stringify(book);
+
+const parsedData = JSON.parse(bookJSON);
+
 console.log(
   "The book is called " +
     book.title +
@@ -13,3 +17,9 @@ console.log(
     book.pageCount +
     " pages."
 );
+
+console.log(bookJSON);
+
+console.log(parsedData.author);
+console.log(parsedData.title);
+console.log(parsedData.pageCount);
